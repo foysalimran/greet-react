@@ -1,0 +1,14 @@
+{
+    "allBlogHero": {
+        "title": "All-Blogs"
+    },
+    "singleBlogHero": {
+        "title": "Single-Blog"
+    },
+    "allProjectHero": {
+        "title": "All-Projects"
+    },
+    "singleProjectHero": {
+        "title": "Single-Projects"
+    }
+}

@@ -1,0 +1,84 @@
+{
+  "service": {
+    "subtitle": "Services",
+    "title": "Best services your business growth",
+    "items": [
+      {
+        "number": "01",
+        "title": "Tech/IT support",
+        "icon": "icofont-live-support"
+      },
+      {
+        "number": "02",
+        "title": "Cloud services",
+        "icon": "icofont-cloud-refresh"
+      },
+      {
+        "number": "03",
+        "title": "Data security",
+        "icon": "icofont-data"
+      },
+      {
+        "number": "04",
+        "title": "Office phones",
+        "icon": "icofont-telephone"
+      },
+      {
+        "number": "05",
+        "title": "Network equipment",
+        "icon": "icofont-ui-network"
+      },
+      {
+        "number": "06",
+        "title": "Web development",
+        "icon": "icofont-dashboard-web"
+      },
+      {
+        "number": "07",
+        "title": "Mobile development",
+        "icon": "icofont-ui-touch-phone"
+      },
+      {
+        "number": "08",
+        "title": "Blockchain",
+        "icon": "icofont-chart-line"
+      }
+    ]
+  },
+  "servicev2": {
+    "title": "Our Best Services",
+    "subtitle": "Service We Provide",
+    "serviceSliders": [
+      {
+        "image": "assets/images/service/markting-service-1.webp",
+        "icon": "icofont-brand-apple",
+        "title": "Brand Identity",
+        "development": "Entrepreneur, you are your brand. Your website, business card, speech and how you walk and talk is your brand."
+      },
+      {
+        "image": "assets/images/service/markting-service-2.webp",
+        "icon": "icofont-user-male",
+        "title": "Public Relations",
+        "development": "The key obstacle to reforming aid is public opinion.. Public opinion drives them into the 'I care' photo opportunities that dominate aid."
+      },
+      {
+        "image": "assets/images/service/markting-service-3.webp",
+        "icon": "icofont-ticket",
+        "title": "Event Marketing",
+        "development": "When you are networking you are doing more than just marketing your business; you are marketing yourself."
+      },
+      {
+        "image": "assets/images/service/markting-service-4.webp",
+        "icon": "icofont-bullhorn",
+        "title": "Advertising",
+        "development": "Advertising scientifically worked presented itself thus as the great new force. It really does thething, you know."
+      },
+      {
+        "image": "assets/images/service/markting-service-5.webp",
+        "icon": "icofont-email",
+        "title": "Direct Mail",
+        "development": "Have you realized MacRyrie asked her, that you're just like Novikov but with more charm and no OCD?"
+      }
+    ]
+  }
+}

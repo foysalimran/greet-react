@@ -1,0 +1,129 @@
+{
+  "team": {
+    "title": "Expert Team Members",
+    "subtitle": "TEAM MEMBER",
+    "teamMembers": [
+      {
+        "id": 1,
+        "image": "assets/images/team1.webp",
+        "name": "Jack Alexander",
+        "title": "Founder & CEO",
+        "description": "When officers don intimidating riot gear, their appearance alone can stir trouble.",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/",
+        "instagram": "https://www.instagram.com/"
+      },
+      {
+        "id": 2,
+        "image": "assets/images/team2.webp",
+        "name": "Chanda Lewis",
+        "title": "Brands manager",
+        "description": "When officers don intimidating riot gear, their appearance alone can stir trouble.",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/",
+        "instagram": "https://www.instagram.com/"
+      },
+      {
+        "id": 3,
+        "image": "assets/images/team3.webp",
+        "name": "Morgan F.",
+        "title": "Marketing expert",
+        "description": "When officers don intimidating riot gear, their appearance alone can stir trouble.",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/",
+        "instagram": "https://www.instagram.com/"
+      },
+      {
+        "id": 4,
+        "image": "assets/images/team4.webp",
+        "name": "Luca Ethan",
+        "title": "Support manager",
+        "description": "When officers don intimidating riot gear, their appearance alone can stir trouble.",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/",
+        "instagram": "https://www.instagram.com/"
+      }
+    ]
+  },
+  "teamv2": {
+    "title": "Expert Team Members",
+    "subtitle": "Team members",
+    "teamMembers": [
+      {
+        "id": 1,
+        "image": "assets/images/team1.webp",
+        "name": "Saan chew",
+        "title": "Founder & CEO",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/",
+        "linkedin": "https://www.linkedin.com/",
+        "instagram": "https://www.instagram.com/"
+      },
+      {
+        "id": 2,
+        "image": "assets/images/team2.webp",
+        "name": "Sayed khan",
+        "title": "Marketing expert",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/",
+        "instagram": "https://www.instagram.com/"
+      },
+      {
+        "id": 3,
+        "image": "assets/images/team3.webp",
+        "name": "Sara Brick",
+        "title": "Web designer",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/",
+        "linkedin": "https://www.linkedin.com/",
+        "instagram": "https://www.instagram.com/"
+      },
+      {
+        "id": 4,
+        "image": "assets/images/team4.webp",
+        "name": "Jeni deo",
+        "title": "Blockchain expoert",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/",
+        "linkedin": "https://www.linkedin.com/",
+        "instagram": "https://www.instagram.com/"
+      }
+    ]
+  },
+  "teamv3": {
+    "title": "Expert Team Members",
+    "subtitle": "team members",
+    "teamMembers": [
+      {
+        "id": 1,
+        "image": "assets/images/team1.webp",
+        "name": "Jemmy winks",
+        "title": "Brand Identity",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/",
+        "instagram": "https://www.instagram.com/",
+        "linkedin": "https://www.linkedin.com/"
+      },
+      {
+        "id": 2,
+        "image": "assets/images/team2.webp",
+        "name": "Gimmy Butt",
+        "title": "Public Relations",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/",
+        "instagram": "https://www.instagram.com/",
+        "linkedin": "https://www.linkedin.com/"
+      },
+      {
+        "id": 3,
+        "image": "assets/images/team3.webp",
+        "name": "William Jox",
+        "title": "Event Marketing",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/",
+        "instagram": "https://www.instagram.com/",
+        "linkedin": "https://www.linkedin.com/"
+      }
+    ]
+  }
+}

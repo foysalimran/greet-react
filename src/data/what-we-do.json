@@ -1,0 +1,84 @@
+{
+  "whatWeDo": {
+    "subtitle": "What We Do",
+    "title": "Our Best Solutions",
+    "contents": [
+      {
+        "id": 1,
+        "title": "Marketing",
+        "icon": "icofont-brain-alt",
+        "list": [
+          {
+            "id": "1",
+            "item": "Branding solutions"
+          },
+          {
+            "id": "2",
+            "item": "Social media marketing"
+          },
+          {
+            "id": "3",
+            "item": "Email marketing"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "UI / UX reserch",
+        "icon": "icofont-brand-designfloat",
+        "list": [
+          {
+            "id": "1",
+            "item": "Landing pages"
+          },
+          {
+            "id": "2",
+            "item": "Website design"
+          },
+          {
+            "id": "3",
+            "item": "App design"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Conversion Rate",
+        "icon": "icofont-hard-disk",
+        "list": [
+          {
+            "id": "1",
+            "item": "A / B marketing"
+          },
+          {
+            "id": "2",
+            "item": "Multi-variant workflows"
+          },
+          {
+            "id": "3",
+            "item": "Analytics"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Paid Advertising",
+        "icon": "icofont-dart",
+        "list": [
+          {
+            "id": "1",
+            "item": "Adwords camoaigns"
+          },
+          {
+            "id": "2",
+            "item": "Multi-variant workflows"
+          },
+          {
+            "id": "3",
+            "item": "Sales funnel mapping"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "footer": {
+        "title": "Join our newsletter test",
+        "description": "Resources advice avoid trees declared particular offended others anxious husband chicken miles great account.",
+        "copyright": "2022 All right reserved. Made with",
+        "name": "ThemeAtelier",
+        "icon": "icofont-heart"
+    },
+    "footerv2": {
+        "title": "Join our newsletter test",
+        "description": "Resources advice avoid trees declared particular offended others anxious husband chicken miles great account.",
+        "copyright": "2022 All right reserved. Made with",
+        "name": "ThemeAtelier",
+        "icon": "icofont-heart",
+        "number": {
+            "title": "Call Now: test",
+            "text": "765-438-4062"
+        },
+        "email": {
+            "title": "Email Now:",
+            "text": "support@ourdomain.com"
+        },
+        "location": {
+            "title": "Our Location:",
+            "text": "2595 Sugarfoot Lane, Indianapolis, Inidana, 46254"
+        }
+    }
+}

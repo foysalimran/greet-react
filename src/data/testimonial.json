@@ -1,0 +1,93 @@
+{
+  "testimonial": {
+    "title": "+ Happy Customers",
+    "counterNumber": "10000",
+    "subtitle": "Testimonials",
+    "description": "For customers it'll get rid of that awkward post-meal but pre-departure time, a sometimes-20-minute period that Newsweek recently called 'a national crisis and disgrace.'",
+    "button": "Read More",
+    "shapeImg1": "assets/images/client1.webp",
+    "shapeImg2": "assets/images/client2.webp",
+    "shapeImg3": "assets/images/client3.webp",
+    "shapeImg4": "assets/images/client4.webp",
+    "review": [
+      {
+        "id": 1,
+        "image": "assets/images/client2.webp",
+        "description": "On Monday, Bee demonstrated self-awareness about her own talk-show fury, having Beck on to, essentially, give a testimonial about the hazards of polarized political broadcasting.",
+        "name": "Sachin Diwar",
+        "title": "CEO/Founder"
+      },
+      {
+        "id": 2,
+        "image": "assets/images/client3.webp",
+        "description": "But as Henry’s staged testimonial suggests, it can also bring confusion as the patient attempts to make sense of the disjuncture between a song heard right now and a recollection have heard the song before.",
+        "name": "Sachin Diwar",
+        "title": "CEO/Founder"
+      },
+      {
+        "id": 3,
+        "image": "assets/images/client3.webp",
+        "description": "But as Henry’s staged testimonial suggests, it can also bring confusion as the patient attempts to make sense of the disjuncture between a song heard right now and a recollection have heard the song before.",
+        "name": "Sachin Diwar",
+        "title": "CEO/Founder"
+      }
+    ]
+  },
+  "testimonialv2": {
+    "title": "What Clients Say About Us",
+    "subtitle": "Testimonials",
+    "image": "assets/images/it-testimonial.webp",
+    "videoLink": "https://www.youtube.com/watch?v=d2Q3e56iJGs",
+    "review": [
+      {
+        "id": 1,
+        "image": "assets/images/client2.webp",
+        "description": "On Monday, Bee demonstrated self-awareness about her own talk-show fury, having Beck on to, essentially, give a testimonial about the hazards of polarized political broadcasting.",
+        "name": "Sachin Diwar",
+        "title": "CEO/Founder"
+      },
+      {
+        "id": 2,
+        "image": "assets/images/client3.webp",
+        "description": "But as Henry’s staged testimonial suggests, it can also bring confusion as the patient attempts to make sense of the disjuncture between a song heard right now and a recollection have heard the song before.",
+        "name": "Sachin Diwar",
+        "title": "CEO/Founder"
+      },
+      {
+        "id": 3,
+        "image": "assets/images/client3.webp",
+        "description": "But as Henry’s staged testimonial suggests, it can also bring confusion as the patient attempts to make sense of the disjuncture between a song heard right now and a recollection have heard the song before.",
+        "name": "Sachin Diwar",
+        "title": "CEO/Founder"
+      }
+    ]
+  },
+  "testimonialv3": {
+    "title": "Best Reviews & Feedback",
+    "subtitle": "THEY SAY",
+    "image": "assets/images/testimonial.webp",
+    "review": [
+      {
+        "id": 1,
+        "image": "assets/images/client2.webp",
+        "description": "On Monday, Bee demonstrated self-awareness about her own talk-show fury, having Beck on to, essentially, give a testimonial about the hazards of polarized political broadcasting.",
+        "name": "Sachin Diwar",
+        "title": "CEO/Founder"
+      },
+      {
+        "id": 2,
+        "image": "assets/images/client3.webp",
+        "description": "But as Henry’s staged testimonial suggests, it can also bring confusion as the patient attempts to make sense of the disjuncture between a song heard right now and a recollection have heard the song before.",
+        "name": "Sachin Diwar",
+        "title": "CEO/Founder"
+      },
+      {
+        "id": 3,
+        "image": "assets/images/client3.webp",
+        "description": "But as Henry’s staged testimonial suggests, it can also bring confusion as the patient attempts to make sense of the disjuncture between a song heard right now and a recollection have heard the song before.",
+        "name": "Sachin Diwar",
+        "title": "CEO/Founder"
+      }
+    ]
+  }
+}

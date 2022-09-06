@@ -1,0 +1,44 @@
+{
+  "appFeatures": {
+    "title": "Features Of The app",
+    "subtitle": "APP FEATURES",
+    "features": [
+      {
+        "id": 1,
+        "icon": "icofont-drawing-tablet",
+        "title": "Easy Installation",
+        "description": "The marketing division of the Sirius Cybernetics Corporation defines a robot as a bunch of mindless jerks who'll be the first against the wall when the revolution comes,"
+      },
+      {
+        "id": 2,
+        "icon": "icofont-responsive",
+        "title": "Responsive Design",
+        "description": "Amazing thing about Parents as Teachers is that we connect with these families, ideally before the child is born, like reading to your pregnant belly to enhance the parent-baby bond."
+      },
+      {
+        "id": 3,
+        "icon": "icofont-ui-note",
+        "title": "Flexible Interface",
+        "description": "The marketing division of the Sirius Cybernetics Corporation defines a robot as a bunch of mindless jerks who'll be the first against the wall when the revolution comes,"
+      },
+      {
+        "id": 4,
+        "icon": "icofont-file-avi-mp4",
+        "title": "High Resolution",
+        "description": "Amazing thing about Parents as Teachers is that we connect with these families, ideally before the child is born, like reading to your pregnant belly to enhance the parent-baby bond."
+      },
+      {
+        "id": 5,
+        "icon": "icofont-code-alt",
+        "title": "Bug Free Code",
+        "description": "The marketing division of the Sirius Cybernetics Corporation defines a robot as a bunch of mindless jerks who'll be the first against the wall when the revolution comes,"
+      },
+      {
+        "id": 6,
+        "icon": "icofont-cloud-refresh",
+        "title": "Cloud Storage",
+        "description": "Amazing thing about Parents as Teachers is that we connect with these families, ideally before the child is born, like reading to your pregnant belly to enhance the parent-baby bond."
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "whyUs": {
+    "title": "Why You Should Choose Our Services.",
+    "subtitle": "WHY CHOOSE US",
+    "description": "These Differences Should Not Inhibit Them Fromensuring That Elected Representatives, Not The Military, Choose Who Drafts Anew Democratic Constitution.",
+    "image": "assets/images/why-us.webp",
+    "listTitle1": "We're trusted by more then",
+    "number": 3500,
+    "listTitle2": "clients",
+    "listIcon": "icofont-check",
+    "list": [
+      {
+        "item": "Invest Your way"
+      },
+      {
+        "item": "Benefit form your relationship"
+      },
+      {
+        "item": "Stay on top of the market"
+      },
+      {
+        "item": "Monitor gross with apps"
+      },
+      {
+        "item": "Provement result always"
+      },
+      {
+        "item": "100% money back guarantee"
+      }
+    ]
+  }
+}

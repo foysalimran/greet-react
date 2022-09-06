@@ -1,0 +1,134 @@
+{
+  "blog": {
+    "title": "Popular blog & stories",
+    "subtitle": "Latest blog",
+    "blogList": [
+      {
+        "id": 1,
+        "image": "assets/images/blog/blog1.webp",
+        "date": "June 24, 2023",
+        "createBy": "Rayan Colins",
+        "title": "Digital Transformation in Healthcare in 2021: 7 Keys.",
+        "description": "With over a decade experience, we’ve established ourselves as… er a decade experience, we’ve established o",
+        "button": "Read More"
+      },
+      {
+        "id": 2,
+        "image": "assets/images/blog/blog2.webp",
+        "date": "january 21, 2023",
+        "createBy": "Rayan Colins",
+        "title": "Digital Transformation in Healthcare in 2021: 7 Keys.",
+        "description": "With over a decade experience, we’ve established ourselves as… er a decade experience, we’ve established o",
+        "button": "Read More"
+      },
+      {
+        "id": 3,
+        "image": "assets/images/blog/blog3.webp",
+        "date": "january 21, 2023",
+        "createBy": "Rayan Colins",
+        "title": "Digital Transformation in Healthcare in 2021: 7 Keys.",
+        "description": "With over a decade experience, we’ve established ourselves as… er a decade experience, we’ve established o",
+        "button": "Read More"
+      },
+      {
+        "id": 4,
+        "image": "assets/images/blog/blog2.webp",
+        "date": "january 21, 2023",
+        "createBy": "Rayan Colins",
+        "title": "Digital Transformation in Healthcare in 2021: 7 Keys.",
+        "description": "With over a decade experience, we’ve established ourselves as… er a decade experience, we’ve established o",
+        "button": "Read More"
+      }
+    ]
+  },
+  "blogv2": {
+    "title": "Most Popular Blog",
+    "subtitle": "LATEST ARTICLE",
+    "blogList": [
+      {
+        "id": 1,
+        "image": "assets/images/blog/blog10.webp",
+        "date": "Aug 8, 2022",
+        "createBy": "John deo",
+        "title": "10 secrets to connect with your clients easily",
+        "description": "Wisdom is the mother of solutions. You cannot upgrade in wisdom and lack solutions and you cannot have a wisdom and be stranded in any challenge you face."
+      },
+      {
+        "id": 2,
+        "image": "assets/images/blog/blog11.webp",
+        "date": "Aug 8, 2022",
+        "createBy": "John deo",
+        "title": "10 secrets to connect with your clients easily",
+        "description": "Wisdom is the mother of solutions. You cannot upgrade in wisdom and lack solutions and you cannot have a wisdom and be stranded in any challenge you face."
+      }
+    ],
+    "blogSidebar": [
+      {
+        "id": 1,
+        "image": "assets/images/blog/blog10.webp",
+        "date": "Aug 8, 2022",
+        "createBy": "John deo",
+        "title": "10 secrets to connect with your clients easily"
+      },
+      {
+        "id": 2,
+        "image": "assets/images/blog/blog11.webp",
+        "date": "Aug 8, 2022",
+        "createBy": "John deo",
+        "title": "10 secrets to connect with your clients easily"
+      },
+      {
+        "id": 3,
+        "image": "assets/images/blog/blog10.webp",
+        "date": "Aug 8, 2022",
+        "createBy": "John deo",
+        "title": "10 secrets to connect with your clients easily"
+      },
+      {
+        "id": 4,
+        "image": "assets/images/blog/blog11.webp",
+        "date": "Aug 8, 2022",
+        "createBy": "John deo",
+        "title": "10 secrets to connect with your clients easily"
+      },
+      {
+        "id": 5,
+        "image": "assets/images/blog/blog11.webp",
+        "date": "Aug 8, 2022",
+        "createBy": "John deo",
+        "title": "10 secrets to connect with your clients easily"
+      }
+    ]
+  },
+  "blogv3": {
+    "title": "popular blog posts and latest stories",
+    "subtitle": "LATEST news",
+    "button": "Read More",
+    "blogList": [
+      {
+        "id": 1,
+        "image": "assets/images/blog/blog1.webp",
+        "date": "Aug 8, 2022",
+        "createBy": "John deo",
+        "title": "Unity in team can make things easier and great.",
+        "subtitle": "TEAM UNITY"
+      },
+      {
+        "id": 2,
+        "image": "assets/images/blog/blog2.webp",
+        "date": "Aug 8, 2022",
+        "createBy": "John deo",
+        "title": "The product development discuss for best.",
+        "subtitle": "PRODUCT DEVELOPMENT"
+      },
+      {
+        "id": 3,
+        "image": "assets/images/blog/blog3.webp",
+        "date": "Aug 8, 2022",
+        "createBy": "John deo",
+        "title": "The next big challenge for content maker.",
+        "subtitle": "DIGITAL CONTENT"
+      }
+    ]
+  }
+}

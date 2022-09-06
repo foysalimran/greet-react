@@ -1,0 +1,32 @@
+{
+  "platforms": {
+    "title": "It's Working With Your Favorite Platforms",
+    "subtitle": "JOIN OVER 30,000+ BUSINESSES WORLDWIDE",
+    "platformsData": [
+      {
+        "icon": "icofont-brand-linux",
+        "title": "Linux"
+      },
+      {
+        "icon": "icofont-brand-windows",
+        "title": "Windows"
+      },
+      {
+        "icon": "icofont-brand-apple",
+        "title": "Apple"
+      },
+      {
+        "icon": "icofont-brand-android-robot",
+        "title": "Android"
+      },
+      {
+        "icon": "icofont-brand-wordpress",
+        "title": "WordPress"
+      },
+      {
+        "icon": "icofont-dropbox",
+        "title": "Dropbox"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "portfolio": {
+        "title": "Recent completed projects",
+        "subtitle": "Case Studies",
+        "portfolioSliders": [
+            {
+                "id": 1,
+                "title": "It Consulting",
+                "subtitle": "Product Engineer",
+                "image": "assets/images/portfolio1.webp"
+            },
+            {
+                "id": 2,
+                "title": "It Consulting",
+                "subtitle": "Product Engineer",
+                "image": "assets/images/portfolio2.webp"
+            },
+            {
+                "id": 3,
+                "title": "It Consulting",
+                "subtitle": "Product Engineer",
+                "image": "assets/images/portfolio3.webp"
+            },
+            {
+                "id": 4,
+                "title": "It Consulting",
+                "subtitle": "Product Engineer",
+                "image": "assets/images/portfolio4.webp"
+            }
+        ]
+    }
+}

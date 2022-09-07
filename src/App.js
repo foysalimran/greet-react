@@ -2,12 +2,7 @@ import { Suspense, useEffect, useState } from "react";
 import { Spinner, ThemeProvider } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
-import AllBlog from "./components/pages/all-blog";
-import BlogDetail from "./components/pages/blog-detail";
-import BusinessSolution from "./components/pages/business-solution";
-import ItSolution from "./components/pages/it-solution";
 import MarketingSolution from "./components/pages/marketing-solution";
-import ProjectDetails from "./components/pages/project-details";
 import headerData from "./data/header.json";
 import i18n from "./i18n";
 import LocaleContext from "./LocaleContext";
@@ -25,13 +20,7 @@ function App() {
   i18n.on("languageChanged", (lng) => setLocale(i18n.language));
 
   const {
-    headerBusiness,
-    headerIt,
     headerMarketing,
-    headerDigital,
-    headerApp,
-    headerSoftware,
-    singlePageHeader,
   } = headerData;
   return (
     <>
@@ -52,31 +41,7 @@ function App() {
               <Routes>
                 <Route
                   path="/"
-                  element={<BusinessSolution header={headerBusiness} />}
-                />
-                <Route
-                  path="/business-solution"
-                  element={<BusinessSolution header={headerBusiness} />}
-                />
-                <Route
-                  path="/it-solution"
-                  element={<ItSolution header={headerIt} />}
-                />
-                <Route
-                  path="/marketing-solution"
                   element={<MarketingSolution header={headerMarketing} />}
-                />
-                <Route
-                  path="/all-blog"
-                  element={<AllBlog header={singlePageHeader} />}
-                />
-                <Route
-                  path="/blog-details"
-                  element={<BlogDetail header={singlePageHeader} />}
-                />
-                <Route
-                  path="/project-details"
-                  element={<ProjectDetails header={singlePageHeader} />}
                 />
               </Routes>
             </BrowserRouter>

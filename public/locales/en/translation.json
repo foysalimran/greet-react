@@ -70,36 +70,19 @@
   },
   "headerMarketing": {
     "home": {
-      "title": "Home",
-      "dropdownItem1": "Business solution",
-      "dropdownItem2": "IT solution",
-      "dropdownItem3": "Marketing solution",
-      "dropdownItem4": "Digital agency",
-      "dropdownItem5": "Software landing",
-      "dropdownItem6": "Apps landing"
+      "title": "Home"
     },
     "about": {
       "title": "About"
     },
     "service": {
-      "title": "Service"
+      "title": "Uses"
     },
     "team": {
       "title": "Team"
     },
-    "pricing": {
-      "title": "Pricing"
-    },
     "testimonial": {
       "title": "Reviews"
-    },
-    "blog": {
-      "title": "Blog",
-      "blogDropdown1": "All Blogs",
-      "blogDropdown2": "Blog Details"
-    },
-    "contact": {
-      "title": "Contact"
     }
   },
   "headerDigital": {
@@ -499,7 +482,7 @@
     }
   },
   "teamv3": {
-    "title": "Expert Team Members",
+    "title": "Our Awesome Team",
     "subtitle": "TEAM MEMBERS",
     "teamMembers1": {
       "name": "SH Shakib",

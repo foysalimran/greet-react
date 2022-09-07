@@ -83,26 +83,19 @@ const Footerv2 = () => {
           </div>
           <div className="footer__middle">
             <div className="row gx-xl-5">
-              <div className="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                <h4 className="mb-4">
-                  
-                  <Trans i18nKey="footerv2.number">{number.title}</Trans>
-                </h4>
-                <a rel="noreferrer" href={`tel:${number.text}`}>{number.text}</a>
-              </div>
-              <div className="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+              <div className="col-sm-6 col-lg-4 mb-4 mb-lg-0">
                 <h4 className="mb-4">
                   <Trans i18nKey="footerv2.email">{email.title}</Trans>
                 </h4>
                 <a rel="noreferrer" href={`mailto:${email.text}`}>{email.text}</a>
               </div>
-              <div className="col-sm-6 col-lg-3 mb-4 mb-md-0">
+              <div className="col-sm-6 col-lg-4 mb-4 mb-md-0">
                 <h4 className="mb-4">
                   <Trans i18nKey="footerv2.location">{location.title}</Trans>
                 </h4>
                 <p>{location.text}</p>
               </div>
-              <div className="col-sm-6 col-lg-3">
+              <div className="col-sm-6 col-lg-4">
                 <h4 className="mb-4">
                   <Trans i18nKey="footerv2.follow">Follow us:</Trans>
                 </h4>

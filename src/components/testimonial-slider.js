@@ -40,7 +40,7 @@ const TestimonialSlider = ({ review }) => {
               </li>
             </ul>
             <p>
-              <Trans i18nKey={`testimonial.review${i + 1}.description`}>
+              <Trans i18nKey={`testimonialv3.review${i + 1}.description`}>
                 {blogData.description}
               </Trans>
             </p>
@@ -50,12 +50,12 @@ const TestimonialSlider = ({ review }) => {
               </div>
               <div className="user-info__content">
                 <h4>
-                  <Trans i18nKey={`testimonial.review${i + 1}.name`}>
+                  <Trans i18nKey={`testimonialv3.review${i + 1}.name`}>
                     {blogData.name}
                   </Trans>
                 </h4>
                 <p>
-                  <Trans i18nKey={`testimonial.review${i + 1}.title`}>
+                  <Trans i18nKey={`testimonialv3.review${i + 1}.title`}>
                     {blogData.title}
                   </Trans>
                 </p>

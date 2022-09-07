@@ -96,77 +96,7 @@ const HeaderMarketing = ({ header }) => {
                     <Trans i18nKey="headerMarketing.home.title">
                       {header.home.title}
                     </Trans>
-
-                    <span onClick={handleToggle} className="sub-menu-toggle">
-                      <GoChevronDown />
-                    </span>
                   </Link>
-                  <ul
-                    className={
-                      isActive ? "dropdown-menu show" : "dropdown-menu"
-                    }
-                  >
-                    <li className="nav-item">
-                      <PageLink
-                        to={header.home.dropdownItem1.link}
-                        className="nav-link"
-                      >
-                        <Trans i18nKey="headerMarketing.home.dropdownItem1">
-                          {header.home.dropdownItem1.title}
-                        </Trans>
-                      </PageLink>
-                    </li>
-                    <li className="nav-item">
-                      <PageLink
-                        to={header.home.dropdownItem2.link}
-                        className="nav-link"
-                      >
-                        <Trans i18nKey="headerMarketing.home.dropdownItem2">
-                          {header.home.dropdownItem2.title}
-                        </Trans>
-                      </PageLink>
-                    </li>
-                    <li className="nav-item">
-                      <PageLink
-                        to={header.home.dropdownItem3.link}
-                        className="nav-link"
-                      >
-                        <Trans i18nKey="headerMarketing.home.dropdownItem3">
-                          {header.home.dropdownItem3.title}
-                        </Trans>
-                      </PageLink>
-                    </li>
-                    <li className="nav-item">
-                      <PageLink
-                        to={header.home.dropdownItem4.link}
-                        className="nav-link"
-                      >
-                        <Trans i18nKey="headerMarketing.home.dropdownItem4">
-                          {header.home.dropdownItem4.title}
-                        </Trans>
-                      </PageLink>
-                    </li>
-                    <li className="nav-item">
-                      <PageLink
-                        to={header.home.dropdownItem5.link}
-                        className="nav-link"
-                      >
-                        <Trans i18nKey="headerMarketing.home.dropdownItem5">
-                          {header.home.dropdownItem5.title}
-                        </Trans>
-                      </PageLink>
-                    </li>
-                    <li className="nav-item">
-                      <PageLink
-                        to={header.home.dropdownItem6.link}
-                        className="nav-link"
-                      >
-                        <Trans i18nKey="headerMarketing.home.dropdownItem6">
-                          {header.home.dropdownItem6.title}
-                        </Trans>
-                      </PageLink>
-                    </li>
-                  </ul>
                 </li>
                 <li className="nav-item">
                   <Link
@@ -226,24 +156,6 @@ const HeaderMarketing = ({ header }) => {
                   <Link
                     activeClass="active"
                     className="benefits nav-link"
-                    to={header.pricing.link}
-                    spy={true}
-                    isDynamic={false}
-                    hashSpy={false}
-                    spyThrottle={500}
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                  >
-                    <Trans i18nKey="headerMarketing.pricing.title">
-                      {header.pricing.title}
-                    </Trans>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    activeClass="active"
-                    className="benefits nav-link"
                     to={header.testimonial.link}
                     spy={true}
                     isDynamic={false}
@@ -258,75 +170,6 @@ const HeaderMarketing = ({ header }) => {
                     </Trans>
                   </Link>
                 </li>
-                <li className="nav-item dropdown submenu">
-                  <Link
-                    activeClass="active"
-                    className="nav-link scroll dropdown-toggle"
-                    to={header.blog.link}
-                    spy={true}
-                    isDynamic={false}
-                    hashSpy={false}
-                    spyThrottle={500}
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <Trans i18nKey="headerMarketing.blog.title">
-                      {header.blog.title}
-                    </Trans>
-
-                    <span onClick={handleToggle} className="sub-menu-toggle">
-                      <GoChevronDown />
-                    </span>
-                  </Link>
-                  <ul
-                    className={
-                      isActive ? "dropdown-menu show" : "dropdown-menu"
-                    }
-                  >
-                    <li className="nav-item">
-                      <PageLink
-                        to={header.blog.blogDropdown1.link}
-                        className="nav-link"
-                      >
-                        <Trans i18nKey="headerMarketing.blog.blogDropdown1">
-                          {header.blog.blogDropdown1.title}
-                        </Trans>
-                      </PageLink>
-                    </li>
-                    <li className="nav-item">
-                      <PageLink
-                        to={header.blog.blogDropdown2.link}
-                        className="nav-link"
-                      >
-                        <Trans i18nKey="headerMarketing.blog.blogDropdown2">
-                          {header.blog.blogDropdown2.title}
-                        </Trans>
-                      </PageLink>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    activeClass="active"
-                    className="benefits nav-link"
-                    to={header.contact.link}
-                    spy={true}
-                    isDynamic={false}
-                    hashSpy={false}
-                    spyThrottle={500}
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                  >
-                    <Trans i18nKey="headerMarketing.contact.title">
-                      {header.contact.title}
-                    </Trans>
-                  </Link>
-                </li>
-
                 <li
                   className="nav-item dropdown submenu"
                   title={t("language")}

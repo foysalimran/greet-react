@@ -12,17 +12,13 @@
         "copyright": "2022 All right reserved. Made with",
         "name": "ThemeAtelier",
         "icon": "icofont-heart",
-        "number": {
-            "title": "Call Now: test",
-            "text": "765-438-4062"
-        },
         "email": {
             "title": "Email Now:",
-            "text": "support@ourdomain.com"
+            "text": "themeatelierbd@gmail.com"
         },
         "location": {
             "title": "Our Location:",
-            "text": "2595 Sugarfoot Lane, Indianapolis, Inidana, 46254"
+            "text": "Banasree A block, Rampura, Dhaka, Bangladesh"
         }
     }
 }

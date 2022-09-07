@@ -91,14 +91,14 @@
     ]
   },
   "teamv3": {
-    "title": "Expert Team Members",
+    "title": "Our Awesome Team",
     "subtitle": "team members",
     "teamMembers": [
       {
         "id": 1,
-        "image": "assets/images/team1.webp",
-        "name": "Jemmy winks",
-        "title": "Brand Identity",
+        "image": "assets/images/avatar2.png",
+        "name": "SH Shakib",
+        "title": "Web Developer",
         "facebook": "https://www.facebook.com/",
         "twitter": "https://www.twitter.com/",
         "instagram": "https://www.instagram.com/",
@@ -106,9 +106,9 @@
       },
       {
         "id": 2,
-        "image": "assets/images/team2.webp",
-        "name": "Gimmy Butt",
-        "title": "Public Relations",
+        "image": "assets/images/avatar1.png",
+        "name": "Foysal Imran",
+        "title": "Web Developer",
         "facebook": "https://www.facebook.com/",
         "twitter": "https://www.twitter.com/",
         "instagram": "https://www.instagram.com/",
@@ -116,9 +116,9 @@
       },
       {
         "id": 3,
-        "image": "assets/images/team3.webp",
-        "name": "William Jox",
-        "title": "Event Marketing",
+        "image": "assets/images/avatar2.png",
+        "name": "Monirul Fahad",
+        "title": "Web Developer",
         "facebook": "https://www.facebook.com/",
         "twitter": "https://www.twitter.com/",
         "instagram": "https://www.instagram.com/",

@@ -70,13 +70,7 @@
   },
   "headerMarketing": {
     "home": {
-      "title": "مسكن",
-      "dropdownItem1": "حل الأعمال",
-      "dropdownItem2": "حل تكنولوجيا المعلومات",
-      "dropdownItem3": "حل التسويق",
-      "dropdownItem4": "الوكالة الرقمية",
-      "dropdownItem5": "هبوط البرمجيات",
-      "dropdownItem6": "هبوط التطبيقات"
+      "title": "مسكن"
     },
     "about": {
       "title": "حول"
@@ -87,19 +81,8 @@
     "team": {
       "title": "فريق"
     },
-    "pricing": {
-      "title": "التسعير"
-    },
     "testimonial": {
       "title": "المراجعات"
-    },
-    "blog": {
-      "title": "مقالات",
-      "blogDropdown1": "كل المدونات",
-      "blogDropdown2": "تفاصيل المدونة"
-    },
-    "contact": {
-      "title": "اتصال"
     }
   },
   "headerDigital": {

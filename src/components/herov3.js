@@ -58,18 +58,6 @@ const Herov3 = ({ isBg }) => {
                   <Trans i18nKey="herov3.button">{button}</Trans>
                 </span>
               </Link>
-              <div className="hero3__content__video-btn">
-                <PageLink className="glightbox3 video-btn" to={videoLink}>
-                  <i className="icofont-ui-play"></i>
-                </PageLink>
-                <div className="promo-video">
-                  <div className="waves-block">
-                    <div className="waves wave-1"></div>
-                    <div className="waves wave-2"></div>
-                    <div className="waves wave-3"></div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div className="col-lg-6">

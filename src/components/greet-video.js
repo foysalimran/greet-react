@@ -1,15 +1,11 @@
-import React from "react";
-import { useEffect } from "react";
-import "../assets/css/greet-video.css";
-import videoLink from "../assets/video/welcome.mp4";
+import React, { useEffect } from "react";
 import {
-  AiOutlineCloseCircle,
-  AiOutlineFullscreen,
-  AiOutlinePlayCircle,
-  AiOutlineReload,
-  AiOutlineSound,
-  AiOutlineAudioMuted,
+  AiOutlineAudioMuted, AiOutlineCloseCircle,
+  AiOutlineFullscreen, AiOutlinePause, AiOutlinePlayCircle, AiOutlineReload,
+  AiOutlineSound
 } from "react-icons/ai";
+import "../css/greet-video.css";
+import videoLink from "../assets/video/welcome.mp4"; // Add your mp4 video link link here
 
 const GreetVideo = () => {
   useEffect(() => {
@@ -17,14 +13,14 @@ const GreetVideo = () => {
     let greetVideo = document.getElementById("greet_video");
     let greetClose = document.getElementById("greet_close");
     let greetFullClose = document.getElementById("greet_full-close");
-    let greetFullPlay = document.getElementById("greet_full-play");
     let greetFullReplay = document.getElementById("greet_full-replay");
     let greetFullVolume = document.getElementById("greet_full-volume");
     let greetFullMute = document.getElementById("greet_full-mute");
+    let greetFullPause = document.getElementById("greet_full-pause");
+    let greetFullPlay = document.getElementById("greet_full-play");
     let greetFullExpand = document.getElementById("greet_full-expand");
     let greetFullBtn = document.getElementById("greet_full-btn");
     let greetText = document.getElementById("greet_text");
-
     greetVideo.autoplay = true;
     greetVideo.muted = true;
     greetVideo.loop = true;
@@ -47,12 +43,20 @@ const GreetVideo = () => {
       greetFullMute.style.display = "none";
       greetVideo.muted = false;
     });
-    // VIDEO PLAY
+
+    // Video pause 
+    greetFullPause.addEventListener("click", () => {
+      greetFullPlay.style.display = "flex";
+      greetFullPause.style.display = "none";
+      greetVideo.pause();
+    })
+    // Video play
     greetFullPlay.addEventListener("click", () => {
-      greetVideo.play();
+      greetFullPause.style.display = "flex";
       greetFullPlay.style.display = "none";
-      greetWrapper.classList.toggle("play-video");
-    });
+      greetVideo.play();
+    })
+
     // CLOSE TOTAL GREET
     greetClose.addEventListener("click", () => {
       greetWrapper.style.display = "none";
@@ -72,18 +76,11 @@ const GreetVideo = () => {
         greetVideo.currentTime = 0;
       }
       greetWrapper.classList.add("greet_wrapper-full");
-      greetWrapper.classList.toggle("play-video");
       greetVideo.muted = false;
-
       greetFullMute.style.display = "none";
       greetFullVolume.style.display = "flex";
-      if (greetWrapper.classList.contains("play-video")) {
-        greetVideo.play();
-        greetFullPlay.style.display = "none";
-      } else {
-        greetVideo.pause();
-        greetFullPlay.style.display = "flex";
-      }
+      greetFullPlay.style.display = "none";
+      greetFullPause.style.display = "flex";
       greetFullBtn.style.display = "block";
     };
 
@@ -96,8 +93,8 @@ const GreetVideo = () => {
     });
 
     // ON SCROLL SIZE CHANGE
-    window.addEventListener("scroll", function (event) {
-      let scroll = event.scrollY;
+    window.addEventListener("scroll", function(event) {
+      let scroll =  window.scrollY;
       if (scroll > 1) {
         greetWrapper.classList.add("greet_wrapper-resize");
       } else {
@@ -124,9 +121,7 @@ const GreetVideo = () => {
         <div id="greet_full-close" className="greet_full-close">
           <AiOutlineCloseCircle />
         </div>
-        <div id="greet_full-play" className="greet_full-play">
-          <AiOutlinePlayCircle />
-        </div>
+
         <div className="greet_media-action">
           <div id="greet_full-replay" className="greet_full-replay">
             <AiOutlineReload />
@@ -137,6 +132,15 @@ const GreetVideo = () => {
           <div id="greet_full-mute" className="greet_full-mute">
             <AiOutlineAudioMuted />
           </div>
+
+          <div id="greet_full-pause" className="greet_full-pause">
+            <AiOutlinePause />
+          </div>
+
+          <div id="greet_full-play" className="greet_full-play">
+            <AiOutlinePlayCircle />
+          </div>
+          
           <div id="greet_full-expand" className="greet_full-expand">
             <AiOutlineFullscreen />
           </div>

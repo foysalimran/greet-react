@@ -6,7 +6,6 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  cursor: pointer;
   z-index: 9999;
 }
 .greet_wrapper video {
@@ -73,6 +72,7 @@
   transform: inherit;
 }
 .greet_wrapper-full [class*='greet_full-'] {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;

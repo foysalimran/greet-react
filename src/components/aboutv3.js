@@ -18,7 +18,7 @@ const Aboutv3 = ({ isBg }) => {
       id="about"
       className={`about3 section-padding-t ${isBg === "yes" ? "bg-one" : ""}`}
     >
-      <div className="container-fluid">
+      <div className="container">
         <div className="row align-items-center">
         <div className="col-lg-6 mb-4 mb-xl-0">
             <div className="about3__content">

@@ -4,8 +4,8 @@ import {
   AiOutlineFullscreen, AiOutlinePause, AiOutlinePlayCircle, AiOutlineReload,
   AiOutlineSound
 } from "react-icons/ai";
-import "../assets/css/greet-video.css";
-import videoLink from "../assets/video/welcome.mp4";
+import "../css/greet-video.css";
+import videoLink from "../assets/video/welcome.mp4"; // Add your mp4 video link link here
 
 const GreetVideo = () => {
   useEffect(() => {
@@ -21,8 +21,6 @@ const GreetVideo = () => {
     let greetFullExpand = document.getElementById("greet_full-expand");
     let greetFullBtn = document.getElementById("greet_full-btn");
     let greetText = document.getElementById("greet_text");
-
-
     greetVideo.autoplay = true;
     greetVideo.muted = true;
     greetVideo.loop = true;
@@ -52,10 +50,7 @@ const GreetVideo = () => {
       greetFullPause.style.display = "none";
       greetVideo.pause();
     })
-
-
     // Video play
-
     greetFullPlay.addEventListener("click", () => {
       greetFullPause.style.display = "flex";
       greetFullPlay.style.display = "none";
@@ -81,15 +76,11 @@ const GreetVideo = () => {
         greetVideo.currentTime = 0;
       }
       greetWrapper.classList.add("greet_wrapper-full");
-      
       greetVideo.muted = false;
-
       greetFullMute.style.display = "none";
       greetFullVolume.style.display = "flex";
-
       greetFullPlay.style.display = "none";
       greetFullPause.style.display = "flex";
-      
       greetFullBtn.style.display = "block";
     };
 

@@ -4,7 +4,6 @@ import data from "../data/hero.json";
 import GLightbox from "glightbox";
 import { Trans } from "react-i18next";
 import { Link } from "react-scroll";
-import { Link as PageLink } from "react-router-dom";
 
 const Herov3 = ({ isBg }) => {
   const { herov3 } = data;
@@ -13,7 +12,6 @@ const Herov3 = ({ isBg }) => {
     subtitle,
     description,
     image,
-    videoLink,
     identity,
     relations,
     event,

@@ -51,7 +51,7 @@ function SubscribeForm({ status, message, onValidated }) {
 
 const Footerv2 = () => {
   const { footerv2 } = data;
-  const { title, description, copyright, name, icon, number, email, location } =
+  const { title, description, copyright, name, icon, email, location } =
     footerv2;
   return (
     <section className="footer2 footer">

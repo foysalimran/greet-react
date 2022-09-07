@@ -3,6 +3,7 @@ import Aboutv3 from "../aboutv3";
 import Ctav3 from "../ctav3";
 import Footerv2 from "../global/footerv2";
 import HeaderMarketing from "../global/headerMarketing";
+import GreetVideo from "../greet-video";
 import Herov3 from "../herov3";
 import Servicev2 from "../servicev2";
 import Teamv3 from "../teamv3";
@@ -19,6 +20,7 @@ const MarketingSolution = ({ header }) => {
       <Teamv3 isBg="yes" />
       <Testimonialv3 isBg="" />
       <Footerv2 />
+      <GreetVideo />
     </div>
   );
 };

@@ -6,10 +6,8 @@ import {
   AiOutlinePause,
   AiOutlinePlayCircle,
   AiOutlineReload,
-  AiOutlineSound,
+  AiOutlineSound
 } from "react-icons/ai";
-import "../css/greet-video.css";
-import videoLink from "../assets/video/welcome.mp4"; // Add your mp4 video link link here
 import styled from "styled-components";
 
 const GreetWrapper = styled.div`
@@ -32,7 +30,7 @@ const GreetWrapper = styled.div`
   }
   video {
     border-radius: 100%;
-    border: 3px solid #7432ff;
+    border: 3px solid yellowgreen;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -129,6 +127,7 @@ const GreetText = styled.h4`
   width: 100%;
   text-align: center;
   font-size: 25px;
+  text-transform:capitalize;
 `;
 const GreetClose = styled.div`
   position: absolute;
@@ -150,7 +149,8 @@ const GreetFullPause = styled.div``;
 const GreetFullPlay = styled.div``;
 const GreetFullExpand = styled.div``;
 
-const GreetVideo = () => {
+
+const GreetVideo = ({mp4, webm, ogg, hi, border, isLeft}) => {
   useEffect(() => {
     let greetWrapper = document.getElementById("greet_wrapper");
     let greetVideo = document.getElementById("greet_video");
@@ -254,14 +254,14 @@ const GreetVideo = () => {
   }, []);
 
   return (
-    <GreetWrapper id="greet_wrapper" className="greet_wrapper greet_toggler">
-      <video id="greet_video">
-        <source type="video/mp4" src={videoLink} />
-        {/* <source src="../src/video/welcome.mp4" type="video/webm" />
-        <source src="../src/video/welcome.mp4" type="video/ogg" /> */}
+    <GreetWrapper id="greet_wrapper" className={`greet_wrapper greet_toggler ${isLeft === "yes" ? "greet_left" : ""}`}>
+      <video id="greet_video" style={{borderColor: `${border}`}}>
+        <source type="video/mp4" src={mp4} />
+        <source src={webm} type="video/webm" />
+        <source src={ogg} type="video/ogg" />
       </video>
       <GreetText id="greet_text" className="greet_text">
-        Hey 👋
+        {hi ? hi : "Hey 👋"}
       </GreetText>
 
       <GreetClose id="greet_close" className="greet_close">

@@ -1,4 +1,7 @@
 import React from "react";
+import mp4 from "../../assets/video/welcome.mp4";
+import ogg from "../../assets/video/welcome.ogg";
+import webm from "../../assets/video/welcome.webm";
 import Aboutv3 from "../aboutv3";
 import Ctav3 from "../ctav3";
 import Footerv2 from "../global/footerv2";
@@ -20,7 +23,9 @@ const MarketingSolution = ({ header }) => {
       <Teamv3 isBg="yes" />
       <Testimonialv3 isBg="" />
       <Footerv2 />
-      <GreetVideo />
+      {/* Greet video component start */}
+      <GreetVideo mp4={mp4} webm={webm} ogg={ogg} hi="hi! 👋" border="#c63fcd" isLeft="no" />
+      {/* Greet video component end */}
     </div>
   );
 };

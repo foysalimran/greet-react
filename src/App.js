@@ -8,9 +8,7 @@ const greetOptions = [
   { id: 3, link: "#", laval: "Send Email", type: "email_form" },
 ];
 
-
 function App() {
-  
   return (
     <>
     <GreetVideo

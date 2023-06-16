@@ -1,5 +1,5 @@
-import defaultVideo from "./video/welcome.mp4";
-import video1 from "./video/example2.mp4";
+import defaultVideo from "./video/example2.mp4";
+import video1 from "./video/welcome.mp4";
 import GreetVideo from "./greet-video";
 
 const greetOptions = [

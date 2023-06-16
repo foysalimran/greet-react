@@ -493,7 +493,7 @@ const GreetVideo = ({
             <AiOutlineFullscreen />
           </GreetFullExpand>
         </GreetMediaAction>
-        <div className="greet_change-video">
+        {/* <div className="greet_change-video">
           {greetOptions.map((greetOption, index) => (
             <div key={index}>
               {greetOption.type === "link" && (
@@ -534,7 +534,7 @@ const GreetVideo = ({
               )}
             </div>
           ))}
-        </div>
+        </div> */}
       </GreetFullBtn>
       <form
         className="greet_email-form"

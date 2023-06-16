@@ -37,7 +37,7 @@ const MarketingSolution = ({ header }) => {
         btnColorText="#fff"
         defaultVideo={defaultVideo}
         greetOptions={greetOptions}
-        web3formsAccessKey= "YOUR_ACCESS_KEY_HERE"
+        web3formsAccessKey= "b1c275cd-e749-49e3-82cf-537ac0a8bcde"
       />
       {/* Greet video component end */}
     </div>

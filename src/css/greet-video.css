@@ -1,4 +1,4 @@
-.greet_wrapper {
+/* .greet_wrapper {
   transition: all 0.3s;
   transform-origin: bottom right;
   width: 170px;
@@ -6,17 +6,16 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  cursor: pointer;
   z-index: 9999;
-}
-.greet_wrapper video {
+} */
+/* .greet_wrapper video {
   border-radius: 100%;
   border: 3px solid #7432ff;
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
-.greet_wrapper .greet_text {
+} */
+/* .greet_wrapper .greet_text {
   position: absolute;
   top: 50%;
   z-index: 99;
@@ -26,53 +25,55 @@
   width: 100%;
   text-align: center;
   font-size: 25px;
-}
-.greet_wrapper .greet_close {
+} */
+/* .greet_wrapper .greet_close {
   position: absolute;
   top: -6px;
   right: 15px;
   opacity: 0;
   transition: 0.3s;
-}
-.greet_wrapper:hover .greet_close {
+} */
+/* .greet_wrapper:hover .greet_close {
   opacity: 1;
-}
-.greet_wrapper .greet_close i {
+} */
+/* .greet_wrapper .greet_close i {
   font-size: 25px;
-}
-.greet_wrapper-resize {
+} */
+/* .greet_wrapper-resize {
   transform: scale(0.67);
-}
-.greet_wrapper [class*='greet_full-'] {
+} */
+/* .greet_wrapper [class*="greet_full-"] {
   display: none;
 }
-.greet_wrapper [class*='greet_full-'] .greet_media-action {
+.greet_wrapper [class*="greet_full-"] .greet_media-action {
   display: none;
 }
 .greet_wrapper .greet_full-close {
   display: none;
-}
-.greet_wrapper-full {
+} */
+/* .greet_wrapper-full {
   width: 300px;
   height: 500px;
-}
-.greet_wrapper-full video {
+} */
+
+/* .greet_wrapper-full video {
   border-radius: 10px;
   border: none;
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
-.greet_wrapper-full .greet_text {
+} */
+/* .greet_wrapper-full .greet_text {
   display: none;
-}
-.greet_wrapper-full .greet_close {
+} */
+/* .greet_wrapper-full .greet_close {
   display: none;
-}
-.greet_wrapper-full.greet_wrapper-resize {
+} */
+/* .greet_wrapper-full.greet_wrapper-resize {
   transform: inherit;
-}
-.greet_wrapper-full [class*='greet_full-'] {
+} */
+/* .greet_wrapper-full [class*="greet_full-"] {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,37 +84,45 @@
   background-color: rgb(22 30 46 / 80%);
   color: #fff;
   transition: all 0.5s;
-}
+} */
 
-.greet_wrapper-full [class*='greet_full-']:hover {
+/* .greet_wrapper-full [class*="greet_full-"]:hover {
   background-color: #111;
-}
-.greet_wrapper-full .greet_full-close {
+} */
+/* .greet_wrapper-full .greet_full-close {
   top: 5px;
   right: 5px;
-}
-.greet_wrapper-full .greet_media-action {
+} */
+/* .greet_wrapper-full .greet_media-action {
   display: flex;
   flex-direction: column;
   top: 5px;
   left: 5px;
   position: absolute;
-}
-.greet_wrapper-full .greet_media-action [class*='greet_full-'] {
+} */
+/* .greet_wrapper-full .greet_media-action [class*="greet_full-"] {
   position: unset;
   margin-bottom: 5px;
-}
+} */
 
-.greet-left {
+/* .greet-left {
   left: 30px !important;
   right: auto;
 }
 
 .greet-left.greet_wrapper {
   transform-origin: bottom left;
-}
+} */
 
-@media only screen and (max-width: 575px) {
+/* .greet_wrapper {
+  cursor: pointer;
+} */
+
+/* .greet_wrapper.greet_toggler.greet_wrapper-full {
+  cursor: auto;
+} */
+
+/* @media only screen and (max-width: 575px) {
   .greet_wrapper {
     width: 150px;
     height: 150px;
@@ -133,4 +142,4 @@
     width: 200px;
     height: 350px;
   }
-}
+} */

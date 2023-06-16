@@ -9,10 +9,10 @@ const Ctav3 = ({ isBg }) => {
     <section
       className={`cta3 section-padding ${isBg === "yes" ? "bg-one" : ""}`}
     >
-      <div class="container">
-        <div class="row align-items-center cta3__wrapper">
-          <div class="col-md-6 mb-3 mb-md-0 cta3__wrapper__content">
-            <h4 class="mb-3">
+      <div className="container">
+        <div className="row align-items-center cta3__wrapper">
+          <div className="col-md-6 mb-3 mb-md-0 cta3__wrapper__content">
+            <h4 className="mb-3">
             {<Trans i18nKey="ctav3.title">{title}</Trans>}
             </h4>
            <ul>
@@ -24,11 +24,11 @@ const Ctav3 = ({ isBg }) => {
             <li>Now just add your video to markup we provided and it will work fine.</li>
            </ul>
           </div>
-          <div class="col-md-6">
+          <div className="col-md-6">
             <img
               src={image}
               alt=""
-              class="img-fluid img-thumbnail"
+              className="img-fluid img-thumbnail"
             />
           </div>
         </div>

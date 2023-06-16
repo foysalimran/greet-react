@@ -8,6 +8,14 @@ import Herov3 from "../herov3";
 import Servicev2 from "../servicev2";
 import Teamv3 from "../teamv3";
 import Testimonialv3 from "../testimonialv3";
+import defaultVideo from "../../assets/video/welcome.mp4";
+import video1 from "../../assets/video/example1.mp4";
+
+const greetOptions = [
+  { id: 1, link: `${video1}`, laval: "Food Review", type: "video" },
+  { id: 2, link: "#", laval: "Contact", type: "link" },
+  { id: 3, link: "#", laval: "Send Email", type: "email_form" },
+];
 
 const MarketingSolution = ({ header }) => {
   return (
@@ -20,7 +28,18 @@ const MarketingSolution = ({ header }) => {
       <Teamv3 isBg="yes" />
       <Testimonialv3 isBg="" />
       <Footerv2 />
-      <GreetVideo />
+      {/* Greet video component start */}
+      <GreetVideo
+        hi="hi! 👋"
+        border="blue"
+        isLeft="no"
+        btnColorBg="red"
+        btnColorText="#fff"
+        defaultVideo={defaultVideo}
+        greetOptions={greetOptions}
+        web3formsAccessKey= "YOUR_ACCESS_KEY_HERE"
+      />
+      {/* Greet video component end */}
     </div>
   );
 };

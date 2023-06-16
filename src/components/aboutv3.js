@@ -46,9 +46,9 @@ const Aboutv3 = ({ isBg }) => {
             </div>
           </div>
           <div className="col-lg-6">
-          <div class="about3__image">
+          <div className="about3__image">
               <img
-                class="img-fluid"
+                className="img-fluid"
                 src={image}
                 alt=""
               />

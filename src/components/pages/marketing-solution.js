@@ -31,9 +31,9 @@ const MarketingSolution = ({ header }) => {
       {/* Greet video component start */}
       <GreetVideo
         hi="hi! 👋"
-        border="blue"
+        border="#7432ff"
         isLeft="no"
-        btnColorBg="red"
+        btnColorBg="#7432ff"
         btnColorText="#fff"
         defaultVideo={defaultVideo}
         greetOptions={greetOptions}

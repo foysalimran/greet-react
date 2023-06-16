@@ -1,4 +1,3 @@
-
 import React, { useContext } from "react";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
@@ -22,7 +21,12 @@ const TestimonialSlider = ({ review }) => {
       {review?.map((blogData, i) => (
         <SwiperSlide key={blogData.id}>
           <div className="testimonial__slide__content">
-            <ul>
+            <p style={{marginBottom: "15px"}}>
+              <Trans i18nKey={`testimonialv3.review${i + 1}.description`}>
+                {blogData.description}
+              </Trans>
+            </p>
+            <ul style={{marginBottom: "5px"}}>
               <li>
                 <i className="icofont-star"></i>
               </li>
@@ -39,26 +43,16 @@ const TestimonialSlider = ({ review }) => {
                 <i className="icofont-star"></i>
               </li>
             </ul>
-            <p>
-              <Trans i18nKey={`testimonialv3.review${i + 1}.description`}>
-                {blogData.description}
-              </Trans>
-            </p>
+
             <div className="user-info">
-              <div className="user-info__image">
-                <img src={blogData.image} alt="title" />
-              </div>
               <div className="user-info__content">
-                <h4>
-                  <Trans i18nKey={`testimonialv3.review${i + 1}.name`}>
-                    {blogData.name}
-                  </Trans>
-                </h4>
-                <p>
-                  <Trans i18nKey={`testimonialv3.review${i + 1}.title`}>
-                    {blogData.title}
-                  </Trans>
-                </p>
+                <a href={blogData.link}>
+                  <h4>
+                    <Trans i18nKey={`testimonialv3.review${i + 1}.name`}>
+                      {blogData.name}
+                    </Trans>
+                  </h4>
+                </a>
               </div>
             </div>
           </div>

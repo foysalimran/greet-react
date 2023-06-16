@@ -1,10 +1,11 @@
-import defaultVideo from "./video/example2.mp4";
-import video1 from "./video/welcome.mp4";
+import defaultVideo from "./video/example1.mp4";
+import video1 from "./video/example2.mp4";
+import video2 from "./video/welcome.mp4";
 import GreetVideo from "./greet-video";
 
 const greetOptions = [
   { id: 1, link: `${video1}`, laval: "Food Review", type: "video" },
-  { id: 1, link: `${defaultVideo}`, laval: "Doctor Review", type: "video" },
+  { id: 1, link: `${video2}`, laval: "Doctor Review", type: "video" },
   { id: 2, link: "#", laval: "Contact", type: "link" },
   { id: 3, link: "#", laval: "Send Email", type: "email_form" },
 ];

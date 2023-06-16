@@ -4,6 +4,7 @@ import GreetVideo from "./greet-video";
 
 const greetOptions = [
   { id: 1, link: `${video1}`, laval: "Food Review", type: "video" },
+  { id: 1, link: `${defaultVideo}`, laval: "Doctor Review", type: "video" },
   { id: 2, link: "#", laval: "Contact", type: "link" },
   { id: 3, link: "#", laval: "Send Email", type: "email_form" },
 ];

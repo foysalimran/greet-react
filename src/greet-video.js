@@ -9,6 +9,7 @@ import {
   AiOutlineSound,
 } from "react-icons/ai";
 import styled from "styled-components";
+import VideoPopup from "./video-popup";
 
 const GreetWrapper = styled.div`
   transition: all 0.3s;
@@ -427,7 +428,7 @@ const GreetVideo = ({
       greetVideo.play();
       greetFullPlay.style.display = "none";
       greetFullPause.style.display = "flex";
-    }
+    };
     // ON SCROLL SIZE CHANGE
     window.addEventListener("scroll", function (event) {
       let scroll = window.scrollY;
@@ -493,45 +494,8 @@ const GreetVideo = ({
           </GreetFullExpand>
         </GreetMediaAction>
         <div className="greet_change-video">
-          {greetOptions.map((greetOption) => (
-            <div key={greetOption.id}>
-              {greetOption.type === "link" && (
-                <a
-                  style={{
-                    backgroundColor: `${btnColorBg}`,
-                    color: `${btnColorText}`,
-                  }}
-                  className="greet_btn"
-                  href={`${greetOption.link}`}
-                >
-                  {greetOption.laval}
-                </a>
-              )}
-              {greetOption.type === "video" && (
-                <button
-                  style={{
-                    backgroundColor: `${btnColorBg}`,
-                    color: `${btnColorText}`,
-                  }}
-                  className="greet_btn"
-                  onClick={() => handleVideoClick(greetOption.link)}
-                >
-                  {greetOption.laval}
-                </button>
-              )}
-              {greetOption.type === "email_form" && (
-                <button
-                  className="greet_btn greet_add-form"
-                  id="greet_add-form"
-                  style={{
-                    backgroundColor: `${btnColorBg}`,
-                    color: `${btnColorText}`,
-                  }}
-                >
-                  {greetOption.laval}
-                </button>
-              )}
-            </div>
+          {greetOptions.map((greetOption, index) => (
+            <VideoPopup greetOption={greetOption} key={index} btnColorBg={btnColorBg} btnColorText={btnColorText} handleVideoClick={handleVideoClick} />
           ))}
         </div>
       </GreetFullBtn>

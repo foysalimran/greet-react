@@ -80,7 +80,7 @@ const SinglePageHeader = ({ header }) => {
               >
                 <li className="nav-item dropdown submenu">
                   <Link
-                    activeClass="active"
+                    activeclassName="active"
                     className="nav-link scroll dropdown-toggle"
                     to={header.home.link}
                     spy={true}
@@ -170,7 +170,7 @@ const SinglePageHeader = ({ header }) => {
                 </li>
                 <li className="nav-item dropdown submenu">
                   <Link
-                    activeClass="active"
+                    activeclassName="active"
                     className="nav-link scroll dropdown-toggle"
                     to={header.blog.link}
                     spy={true}
@@ -220,7 +220,7 @@ const SinglePageHeader = ({ header }) => {
                 </li>
                 <li className="nav-item dropdown submenu">
                   <Link
-                    activeClass="active"
+                    activeclassName="active"
                     className="nav-link scroll dropdown-toggle"
                     to={header.project.link}
                     spy={true}
@@ -274,7 +274,7 @@ const SinglePageHeader = ({ header }) => {
                   id="basic-nav-dropdown"
                 >
                   <Link
-                    activeClass="active"
+                    activeclassName="active"
                     className="nav-link scroll dropdown-toggle"
                     to="#"
                     spy={true}

@@ -1,7 +1,4 @@
 import React from "react";
-import mp4 from "../../assets/video/welcome.mp4";
-import ogg from "../../assets/video/welcome.ogg";
-import webm from "../../assets/video/welcome.webm";
 import Aboutv3 from "../aboutv3";
 import Ctav3 from "../ctav3";
 import Footerv2 from "../global/footerv2";
@@ -11,6 +8,14 @@ import Herov3 from "../herov3";
 import Servicev2 from "../servicev2";
 import Teamv3 from "../teamv3";
 import Testimonialv3 from "../testimonialv3";
+import defaultVideo from "../../assets/video/welcome.mp4";
+import video1 from "../../assets/video/example1.mp4";
+
+const greetOptions = [
+  { id: 1, link: `${video1}`, laval: "Food Review", type: "video" },
+  { id: 2, link: "#", laval: "Contact", type: "link" },
+  { id: 3, link: "#", laval: "Send Email", type: "email_form" },
+];
 
 const MarketingSolution = ({ header }) => {
   return (
@@ -24,7 +29,16 @@ const MarketingSolution = ({ header }) => {
       <Testimonialv3 isBg="" />
       <Footerv2 />
       {/* Greet video component start */}
-      <GreetVideo mp4={mp4} webm={webm} ogg={ogg} hi="hi! 👋" border="#c63fcd" isLeft="no" />
+      <GreetVideo
+        hi="hi! 👋"
+        border="blue"
+        isLeft="no"
+        btnColorBg="red"
+        btnColorText="#fff"
+        defaultVideo={defaultVideo}
+        greetOptions={greetOptions}
+        web3formsAccessKey= "YOUR_ACCESS_KEY_HERE"
+      />
       {/* Greet video component end */}
     </div>
   );

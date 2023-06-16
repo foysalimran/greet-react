@@ -80,7 +80,7 @@ const HeaderMarketing = ({ header }) => {
               >
                 <li className="nav-item dropdown submenu">
                   <Link
-                    activeClass="active"
+                    activeclassName="active"
                     className="nav-link scroll dropdown-toggle"
                     to={header.home.link}
                     spy={true}
@@ -100,7 +100,7 @@ const HeaderMarketing = ({ header }) => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    activeClass="active"
+                    activeclassName="active"
                     className="benefits nav-link"
                     to={header.about.link}
                     spy={true}
@@ -118,7 +118,7 @@ const HeaderMarketing = ({ header }) => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    activeClass="active"
+                    activeclassName="active"
                     className="benefits nav-link"
                     to={header.service.link}
                     spy={true}
@@ -136,7 +136,7 @@ const HeaderMarketing = ({ header }) => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    activeClass="active"
+                    activeclassName="active"
                     className="benefits nav-link"
                     to={header.team.link}
                     spy={true}
@@ -154,7 +154,7 @@ const HeaderMarketing = ({ header }) => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    activeClass="active"
+                    activeclassName="active"
                     className="benefits nav-link"
                     to={header.testimonial.link}
                     spy={true}
@@ -176,7 +176,7 @@ const HeaderMarketing = ({ header }) => {
                   id="basic-nav-dropdown"
                 >
                   <Link
-                    activeClass="active"
+                    activeclassName="active"
                     className="nav-link scroll dropdown-toggle"
                     to="#"
                     spy={true}

@@ -260,6 +260,48 @@ const GreetVideo = ({
   defaultVideo,
   web3formsAccessKey,
 }) => {
+  let greetFormClose;
+  const [currentVideo, setCurrentVideo] = useState(defaultVideo);
+  const [success, setSuccess] = useState("Send Email");
+
+  const handleVideoClick = (videoUrl) => {
+    setCurrentVideo(videoUrl);
+  };
+
+  const emailFormSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", `${web3formsAccessKey}`);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
+      const data = await res.json();
+      if (res.status === 200) {
+        setSuccess(data.message);
+        setTimeout(() => {
+          event.target.reset();
+        }, 3000);
+      } else {
+        setSuccess(data.message);
+      }
+    } catch (error) {
+      setSuccess("Something went wrong!");
+    }
+    setTimeout(() => {
+      setSuccess("Send email");
+    }, 5000);
+  };
+
   useEffect(() => {
     let greetWrapper = document.getElementById("greet_wrapper");
     let greetVideo = document.getElementById("greet_video");
@@ -273,6 +315,7 @@ const GreetVideo = ({
     let greetFullExpand = document.getElementById("greet_full-expand");
     let greetFullBtn = document.getElementById("greet_full-btn");
     let greetText = document.getElementById("greet_text");
+    let greetAddFrom = document.querySelector(".greet_add-form");
     let emailForm = document.querySelector(".greet_email-form");
 
     greetVideo.autoplay = true;
@@ -372,6 +415,20 @@ const GreetVideo = ({
     greetText.addEventListener("click", () => {
       videoModal();
     });
+
+    /* Email form */
+    if (greetAddFrom) {
+      greetAddFrom.addEventListener("click", () => {
+        emailForm.classList.add("email-form-active");
+        greetVideo.pause();
+      });
+    }
+    greetFormClose = () => {
+      emailForm.classList.remove("email-form-active");
+      greetVideo.play();
+      greetFullPlay.style.display = "none";
+      greetFullPause.style.display = "flex";
+    };
     // ON SCROLL SIZE CHANGE
     window.addEventListener("scroll", function (event) {
       let scroll = window.scrollY;
@@ -383,6 +440,12 @@ const GreetVideo = ({
     });
   }, []);
 
+  const handleButtonClick = () => {
+    if (greetFormClose) {
+      greetFormClose(); // Call the function
+    }
+  };
+
   return (
     <GreetWrapper
       id="greet_wrapper"
@@ -393,7 +456,7 @@ const GreetVideo = ({
       <video
         id="greet_video"
         style={{ borderColor: `${border}` }}
-        src={defaultVideo}
+        src={currentVideo}
       ></video>
       <GreetText id="greet_text" className="greet_text">
         {hi ? hi : "Hey 👋"}
@@ -430,7 +493,77 @@ const GreetVideo = ({
             <AiOutlineFullscreen />
           </GreetFullExpand>
         </GreetMediaAction>
+        <div className="greet_change-video">
+          {greetOptions.map((greetOption, index) => (
+            <div key={index}>
+              {greetOption.type === "link" && (
+                <a
+                  style={{
+                    backgroundColor: `${btnColorBg}`,
+                    color: `${btnColorText}`,
+                  }}
+                  className="greet_btn"
+                  href={`${greetOption.link}`}
+                >
+                  {greetOption.laval}
+                </a>
+              )}
+              {greetOption.type === "video" && (
+                <button
+                  style={{
+                    backgroundColor: `${btnColorBg}`,
+                    color: `${btnColorText}`,
+                  }}
+                  className="greet_btn"
+                  onClick={() => handleVideoClick(greetOption.link)}
+                >
+                  {greetOption.laval}
+                </button>
+              )}
+              {greetOption.type === "email_form" && (
+                <button
+                  className="greet_btn greet_add-form"
+                  id="greet_add-form"
+                  style={{
+                    backgroundColor: `${btnColorBg}`,
+                    color: `${btnColorText}`,
+                  }}
+                >
+                  {greetOption.laval}
+                </button>
+              )}  
+            </div>
+          ))}
+        </div>
       </GreetFullBtn>
+      <form
+        className="greet_email-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        onSubmit={emailFormSubmit}
+      >
+        <div className="greet_form-close" onClick={handleButtonClick}>
+          <AiOutlineCloseCircle />
+        </div>
+        <input type="text" name="name" required placeholder="Your name*" />
+        <input type="email" name="email" required placeholder="Your email*" />
+        <input type="number" name="number" placeholder="Your phone" />
+        <textarea
+          name="message*"
+          required
+          placeholder="Your message here.."
+        ></textarea>
+        <button
+          className="greet_email-submit"
+          style={{
+            backgroundColor: `${btnColorBg}`,
+            color: `${btnColorText}`,
+          }}
+          type="submit"
+        >
+          {success}
+        </button>
+      </form>
     </GreetWrapper>
   );
 };

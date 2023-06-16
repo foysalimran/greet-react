@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AiOutlineAudioMuted,
   AiOutlineCloseCircle,
@@ -6,7 +6,7 @@ import {
   AiOutlinePause,
   AiOutlinePlayCircle,
   AiOutlineReload,
-  AiOutlineSound
+  AiOutlineSound,
 } from "react-icons/ai";
 import styled from "styled-components";
 
@@ -27,6 +27,9 @@ const GreetWrapper = styled.div`
   @media only screen and (max-width: 450px) {
     width: 135px;
     height: 135px;
+  }
+  * {
+    box-sizing: border-box;
   }
   video {
     border-radius: 100%;
@@ -116,6 +119,102 @@ const GreetWrapper = styled.div`
     right: auto;
     transform-origin: bottom left;
   }
+  .greet_change-video {
+    display: none;
+  }
+  &.greet_wrapper-full .greet_change-video {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    transition: 0.3s;
+  }
+  &.greet_wrapper-full .greet_btn {
+    transition: 0.3s;
+    display: block;
+    padding: 10px 8px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+  &.greet_wrapper-full .greet_btn:hover {
+    background-color: #161e2e;
+  }
+  .greet_email-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #d9d9d9;
+    height: 100%;
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: auto;
+    padding-top: 40px;
+  }
+  .greet_email-form .greet_form-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #161e2e78;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .greet_email-form input,
+  .greet_email-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+  .greet_email-form textarea {
+    margin-bottom: 0;
+    height: 48%;
+  }
+
+  .greet_email-form input:focus,
+  .greet_email-form textarea:focus {
+    outline: none;
+  }
+
+  .greet_email-form.email-form-active {
+    display: block;
+  }
+  .greet_email-form button {
+    padding: 10px 16px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  .greet_email-form button:focus {
+    outline: none;
+  }
 `;
 const GreetText = styled.h4`
   position: absolute;
@@ -127,7 +226,8 @@ const GreetText = styled.h4`
   width: 100%;
   text-align: center;
   font-size: 25px;
-  text-transform:capitalize;
+  text-transform: capitalize;
+  margin: 0;
 `;
 const GreetClose = styled.div`
   position: absolute;
@@ -149,8 +249,58 @@ const GreetFullPause = styled.div``;
 const GreetFullPlay = styled.div``;
 const GreetFullExpand = styled.div``;
 
+const GreetVideo = ({
+  greetOptions,
+  hi,
+  border,
+  isLeft,
+  btnColorBg,
+  btnColorText,
+  defaultVideo,
+  web3formsAccessKey,
+}) => {
+  let greetFormClose;
+  const [currentVideo, setCurrentVideo] = useState(defaultVideo);
+  const [success, setSuccess] = useState("Send Email");
 
-const GreetVideo = ({mp4, webm, ogg, hi, border, isLeft}) => {
+  const handleVideoClick = (videoUrl) => {
+    setCurrentVideo(videoUrl);
+  };
+
+  const emailFormSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", `${web3formsAccessKey}`);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
+      const data = await res.json();
+      if (res.status === 200) {
+        setSuccess(data.message);
+        setTimeout(() => {
+          event.target.reset();
+        }, 3000);
+      } else {
+        setSuccess(data.message);
+      }
+    } catch (error) {
+      setSuccess("Something went wrong!");
+    }
+    setTimeout(() => {
+      setSuccess("Send email");
+    }, 5000);
+  };
+
   useEffect(() => {
     let greetWrapper = document.getElementById("greet_wrapper");
     let greetVideo = document.getElementById("greet_video");
@@ -164,12 +314,33 @@ const GreetVideo = ({mp4, webm, ogg, hi, border, isLeft}) => {
     let greetFullExpand = document.getElementById("greet_full-expand");
     let greetFullBtn = document.getElementById("greet_full-btn");
     let greetText = document.getElementById("greet_text");
+    let greetAddFrom = document.querySelector(".greet_add-form");
+    let emailForm = document.querySelector(".greet_email-form");
+
     greetVideo.autoplay = true;
     greetVideo.muted = true;
     greetVideo.loop = true;
     greetFullExpand.addEventListener("click", () => {
       greetVideo.requestFullscreen();
     });
+
+    // Pause video on borwser tab switch
+    var frontend_scripts = { pause_on_switch: "1" };
+    if (frontend_scripts.pause_on_switch) {
+      document.addEventListener("visibilitychange", () => {
+        if (
+          document["hidden"] ||
+          (emailForm && emailForm.classList.contains("email-form-active"))
+        ) {
+          greetVideo.pause();
+        } else {
+          greetVideo.play();
+          greetFullPlay.style.display = "none";
+          greetWrapper.classList.add("play-video");
+        }
+      });
+    }
+
     // REPLAY GREET
     greetFullReplay.addEventListener("click", () => {
       greetVideo.currentTime = 0;
@@ -218,6 +389,8 @@ const GreetVideo = ({mp4, webm, ogg, hi, border, isLeft}) => {
       if (!greetWrapper.classList.contains("greet_wrapper-full")) {
         greetVideo.currentTime = 0;
         greetVideo.muted = false;
+        greetFullPlay.style.display = "none";
+        greetFullPause.style.display = "flex";
       }
       greetWrapper.classList.add("greet_wrapper-full");
       greetFullBtn.style.display = "block";
@@ -242,6 +415,19 @@ const GreetVideo = ({mp4, webm, ogg, hi, border, isLeft}) => {
       videoModal();
     });
 
+    /* Email form */
+    if (greetAddFrom) {
+      greetAddFrom.addEventListener("click", () => {
+        emailForm.classList.add("email-form-active");
+        greetVideo.pause();
+      });
+    }
+    greetFormClose = () => {
+      emailForm.classList.remove("email-form-active");
+      greetVideo.play();
+      greetFullPlay.style.display = "none";
+      greetFullPause.style.display = "flex";
+    }
     // ON SCROLL SIZE CHANGE
     window.addEventListener("scroll", function (event) {
       let scroll = window.scrollY;
@@ -253,13 +439,24 @@ const GreetVideo = ({mp4, webm, ogg, hi, border, isLeft}) => {
     });
   }, []);
 
+  const handleButtonClick = () => {
+    if (greetFormClose) {
+      greetFormClose(); // Call the function
+    }
+  };
+
   return (
-    <GreetWrapper id="greet_wrapper" className={`greet_wrapper greet_toggler ${isLeft === "yes" ? "greet_left" : ""}`}>
-      <video id="greet_video" style={{borderColor: `${border}`}}>
-        <source type="video/mp4" src={mp4} />
-        <source src={webm} type="video/webm" />
-        <source src={ogg} type="video/ogg" />
-      </video>
+    <GreetWrapper
+      id="greet_wrapper"
+      className={`greet_wrapper greet_toggler ${
+        isLeft === "yes" ? "greet_left" : ""
+      }`}
+    >
+      <video
+        id="greet_video"
+        style={{ borderColor: `${border}` }}
+        src={currentVideo}
+      ></video>
       <GreetText id="greet_text" className="greet_text">
         {hi ? hi : "Hey 👋"}
       </GreetText>
@@ -295,7 +492,77 @@ const GreetVideo = ({mp4, webm, ogg, hi, border, isLeft}) => {
             <AiOutlineFullscreen />
           </GreetFullExpand>
         </GreetMediaAction>
+        <div className="greet_change-video">
+          {greetOptions.map((greetOption) => (
+            <div key={greetOption.id}>
+              {greetOption.type === "link" && (
+                <a
+                  style={{
+                    backgroundColor: `${btnColorBg}`,
+                    color: `${btnColorText}`,
+                  }}
+                  className="greet_btn"
+                  href={`${greetOption.link}`}
+                >
+                  {greetOption.laval}
+                </a>
+              )}
+              {greetOption.type === "video" && (
+                <button
+                  style={{
+                    backgroundColor: `${btnColorBg}`,
+                    color: `${btnColorText}`,
+                  }}
+                  className="greet_btn"
+                  onClick={() => handleVideoClick(greetOption.link)}
+                >
+                  {greetOption.laval}
+                </button>
+              )}
+              {greetOption.type === "email_form" && (
+                <button
+                  className="greet_btn greet_add-form"
+                  id="greet_add-form"
+                  style={{
+                    backgroundColor: `${btnColorBg}`,
+                    color: `${btnColorText}`,
+                  }}
+                >
+                  {greetOption.laval}
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
       </GreetFullBtn>
+      <form
+        className="greet_email-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        onSubmit={emailFormSubmit}
+      >
+        <div className="greet_form-close" onClick={handleButtonClick}>
+          <AiOutlineCloseCircle />
+        </div>
+        <input type="text" name="name" required placeholder="Your name*" />
+        <input type="email" name="email" required placeholder="Your email*" />
+        <input type="number" name="number" placeholder="Your phone" />
+        <textarea
+          name="message*"
+          required
+          placeholder="Your message here.."
+        ></textarea>
+        <button
+          className="greet_email-submit"
+          style={{
+            backgroundColor: `${btnColorBg}`,
+            color: `${btnColorText}`,
+          }}
+          type="submit"
+        >
+          {success}
+        </button>
+      </form>
     </GreetWrapper>
   );
 };

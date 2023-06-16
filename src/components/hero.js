@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 const Hero = ({ isBg }) => {
   const { locale } = useContext(LocaleContext);
-  console.log(locale);
+
   const { herov1 } = data;
   const { badgeOne, badgeTwo, badgeThree } = herov1;
   return (

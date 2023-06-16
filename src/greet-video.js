@@ -493,11 +493,48 @@ const GreetVideo = ({
             <AiOutlineFullscreen />
           </GreetFullExpand>
         </GreetMediaAction>
-        <div className="greet_change-video">
+        {/* <div className="greet_change-video">
           {greetOptions.map((greetOption, index) => (
-            <VideoPopup greetOption={greetOption} key={index} btnColorBg={btnColorBg} btnColorText={btnColorText} handleVideoClick={handleVideoClick} />
+            <div key={index}>
+              {greetOption.type === "link" && (
+                <a
+                  style={{
+                    backgroundColor: `${btnColorBg}`,
+                    color: `${btnColorText}`,
+                  }}
+                  className="greet_btn"
+                  href={`${greetOption.link}`}
+                >
+                  {greetOption.laval}
+                </a>
+              )}
+              {greetOption.type === "video" && (
+                <button
+                  style={{
+                    backgroundColor: `${btnColorBg}`,
+                    color: `${btnColorText}`,
+                  }}
+                  className="greet_btn"
+                  onClick={() => handleVideoClick(greetOption.link)}
+                >
+                  {greetOption.laval}
+                </button>
+              )}
+              {greetOption.type === "email_form" && (
+                <button
+                  className="greet_btn greet_add-form"
+                  id="greet_add-form"
+                  style={{
+                    backgroundColor: `${btnColorBg}`,
+                    color: `${btnColorText}`,
+                  }}
+                >
+                  {greetOption.laval}
+                </button>
+              )}
+            </div>
           ))}
-        </div>
+        </div> */}
       </GreetFullBtn>
       <form
         className="greet_email-form"

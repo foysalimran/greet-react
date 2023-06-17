@@ -40,7 +40,7 @@ function App() {
               <ScrollToTop />
               <Routes>
                 <Route
-                  path="/"
+                  path="/react-project/greet-react"
                   element={<MarketingSolution header={headerMarketing} locale={locale} />}
                 />
               </Routes>

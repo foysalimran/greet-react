@@ -16,7 +16,7 @@ const greetOptions = [
   { id: 1, link: `${video1}`, laval: "Another Video", type: "video" },
   { id: 2, link: `${video2}`, laval: "Next Video", type: "video" },
   { id: 3, link: "#", laval: "Send Email", type: "email_form" },
-  { id: 3, link: "https://www.google.com", laval: "Another Page", type: "link" },
+  { id: 3, link: "https://codecanyon.net/item/greet-video-bubble-react-component/39606479", laval: "Another Page", type: "link" },
 ];
 
 const MarketingSolution = ({ header, locale }) => {

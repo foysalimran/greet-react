@@ -58,7 +58,7 @@ const HeaderMarketing = ({ header }) => {
       <div className="container">
         <div className="row">
           <Navbar bg="none" expand="lg">
-            <PageLink className="navbar-brand" to="/">
+            <PageLink className="navbar-brand" to="/react-project/greet-react">
               <h1 className="m-0">{header.logo}</h1>
               {/* <img className="img-fluid" src="" alt="logo"/> */}
             </PageLink>
@@ -169,6 +169,11 @@ const HeaderMarketing = ({ header }) => {
                       {header.testimonial.title}
                     </Trans>
                   </Link>
+                </li>
+                <li className="nav-item">
+                  <a href="/react-project/greet-react/contact-us">
+                    Contact
+                  </a>
                 </li>
                 <li
                   className="nav-item dropdown submenu"

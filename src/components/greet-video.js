@@ -507,6 +507,7 @@ const GreetVideo = ({
                   }}
                   className="greet_btn"
                   href={`${greetOption.link}`}
+                  target="_blake"
                 >
                   {greetOption.laval}
                 </a>

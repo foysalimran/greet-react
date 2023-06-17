@@ -1,42 +1,4 @@
 {
-  "about": {
-    "image": "assets/images/asian-ent.webp",
-    "title": "We Combine Technology With Business Ideas",
-    "subtitle": "About us",
-    "description": "Gordon Coburn Is The President Of Cognizant, A Leading Provider Of Information Technology, Consulting, And Business-Process Services, Dedicated To Helping The World's Leading Companies Build Stronger Businesses.",
-    "card1": {
-      "title": "Most awarded company",
-      "description": "His investment firm, once based in Manhattan, is now pouring hundreds."
-    },
-    "card2": {
-      "title": "Best revinue generator",
-      "description": "Costs for Americans (2005-2014) At the same time, stocks and bonds."
-    }
-  },
-  "aboutv2": {
-    "image1": "assets/images/itteam2.webp",
-    "image2": "assets/images/it-solution-about-1.webp",
-    "title": "We Provide IT Services At Very Large Scale",
-    "subtitle": "About us",
-    "description": "Many Vendors, Software Developers, In Particular, Refer To All Of Their Individual Products As Software Solutions. For Example, A Vendor May Call Its Antivirus Software A Solution Because It Helps To Solve A Particular Problem.",
-    "itemsIcon": "icofont-check-circled",
-    "using": "years of experience",
-    "count": 25,
-    "items": [
-      {
-        "title": "Certified company",
-        "desc": "My idea of good company, Mr Elliot, is the company of clever, well-informed people that is what I call good company"
-      },
-      {
-        "title": "Awarded company",
-        "desc": "You are mistaken, said he gently, that is not good company; that is the best. Good company requires only birth."
-      },
-      {
-        "title": "Innovation and design thinker",
-        "desc": "Imagination is much more important than innovation. There will be no innovation without vivid imagination."
-      }
-    ]
-  },
   "aboutv3": {
     "image": "assets/images/asian-ent.webp",
     "points": 4.95,
@@ -64,54 +26,6 @@
       },
       {
         "title": "Merchandise"
-      }
-    ]
-  },
-  "aboutv5": {
-    "image1": "assets/images/messages-1.webp",
-    "image2": "assets/images/messages-2.webp",
-    "title": "Most Popular Features Of The Software",
-    "subtitle": "ABOUT SOFTWARE",
-    "description": "Yeah, They Called And Offered To Help Out. Same Software They Use For Enhancing Spy Satellite Imagery.",
-    "itemsIcon": "icofont-check-circled",
-    "using": "People using",
-    "count": 9999,
-    "items": [
-      {
-        "title": "Quick access",
-        "desc": "Fabre looked up, his mobile face composed. Good-bye, he said. Georges-Jacques--study law. Law is a weapon"
-      },
-      {
-        "title": "Cross platform",
-        "desc": "Imagination is much more important than innovation. There will be no innovation without vivid imagination."
-      },
-      {
-        "title": "Easy intregation",
-        "desc": "Imagination is much more important than innovation. There will be no innovation without vivid imagination."
-      }
-    ]
-  },
-  "aboutv6": {
-    "image1": "assets/images/1.webp",
-    "image2": "assets/images/2.webp",
-    "title": "Manage It All, In This All New System.",
-    "subtitle": "ABOUT US",
-    "description": "Computers and mobile devices are becoming known for their inherent insecurities and the ability to damage the long term health of the users.",
-    "itemsIcon": "icofont-check-circled",
-    "using": "App Download",
-    "count": 25000,
-    "items": [
-      {
-        "title": "verified application",
-        "desc": "Fabre looked up, his mobile face composed. Good-bye, he said. Georges-Jacques--study law. Law is a weapon"
-      },
-      {
-        "title": "100% secure guarantee",
-        "desc": "You are mistaken, said he gently, that is not good company; that is the best. Good company requires only birth(...)"
-      },
-      {
-        "title": "User friendly and helpful",
-        "desc": "Imagination is much more important than innovation. There will be no innovation without vivid imagination."
       }
     ]
   }

@@ -1,24 +1,17 @@
 {
-    "footer": {
-        "title": "Join our newsletter test",
-        "description": "Resources advice avoid trees declared particular offended others anxious husband chicken miles great account.",
-        "copyright": "2023 All right reserved. Made with",
-        "name": "ThemeAtelier",
-        "icon": "icofont-heart"
+  "footerv2": {
+    "title": "Join our newsletter test",
+    "description": "Resources advice avoid trees declared particular offended others anxious husband chicken miles great account.",
+    "copyright": "2023 All right reserved. Made with",
+    "name": "ThemeAtelier",
+    "icon": "icofont-heart",
+    "email": {
+      "title": "Email Now:",
+      "text": "themeatelierbd@gmail.com"
     },
-    "footerv2": {
-        "title": "Join our newsletter test",
-        "description": "Resources advice avoid trees declared particular offended others anxious husband chicken miles great account.",
-        "copyright": "2023 All right reserved. Made with",
-        "name": "ThemeAtelier",
-        "icon": "icofont-heart",
-        "email": {
-            "title": "Email Now:",
-            "text": "themeatelierbd@gmail.com"
-        },
-        "location": {
-            "title": "Our Location:",
-            "text": "Banasree A block, Rampura, Dhaka, Bangladesh"
-        }
+    "location": {
+      "title": "Our Location:",
+      "text": "Banasree A block, Rampura, Dhaka, Bangladesh"
     }
+  }
 }

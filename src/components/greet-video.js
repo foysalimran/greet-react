@@ -507,8 +507,6 @@ const GreetVideo = ({
                   }}
                   className="greet_btn"
                   href={`${greetOption.link}`}
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   {greetOption.laval}
                 </a>

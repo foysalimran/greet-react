@@ -10,11 +10,13 @@ import Teamv3 from "../teamv3";
 import Testimonialv3 from "../testimonialv3";
 import defaultVideo from "../../assets/video/welcome.mp4";
 import video1 from "../../assets/video/example1.mp4";
+import video2 from "../../assets/video/example2.mp4";
 
 const greetOptions = [
-  { id: 1, link: `${video1}`, laval: "Food Review", type: "video" },
-  { id: 2, link: "#", laval: "Contact", type: "link" },
+  { id: 1, link: `${video1}`, laval: "Another Video", type: "video" },
+  { id: 2, link: `${video2}`, laval: "Reviews", type: "video" },
   { id: 3, link: "#", laval: "Send Email", type: "email_form" },
+  { id: 3, link: "https://www.google.com", laval: "External Link", type: "link" },
 ];
 
 const MarketingSolution = ({ header, locale }) => {
@@ -38,7 +40,7 @@ const MarketingSolution = ({ header, locale }) => {
         btnColorText="#fff"
         defaultVideo={defaultVideo}
         greetOptions={greetOptions}
-        web3formsAccessKey= "b1c275cd-e749-49e3-82cf-537ac0a8bcde"
+        web3formsAccessKey="b1c275cd-e749-49e3-82cf-537ac0a8bcde"
       />
       {/* Greet video component end */}
     </div>

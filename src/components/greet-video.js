@@ -56,8 +56,10 @@ const GreetWrapper = styled.div`
       height: 400px;
     }
     @media only screen and (max-width: 450px) {
-      width: 200px;
-      height: 350px;
+      width: 220px;
+    }
+    @media only screen and (max-height: 850px) {
+      height: 400px;
     }
     video {
       border-radius: 10px;
@@ -135,12 +137,13 @@ const GreetWrapper = styled.div`
   &.greet_wrapper-full .greet_btn {
     transition: 0.3s;
     display: block;
-    padding: 10px 8px;
+    padding: 8px 20px;
     text-align: center;
     font-size: 14px;
     text-decoration: none;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
     &:focus {
       outline: none;
     }
@@ -190,6 +193,12 @@ const GreetWrapper = styled.div`
   .greet_email-form textarea {
     margin-bottom: 0;
     height: 48%;
+    @media only screen and (max-width: 575px) {
+      height: 30%;
+    }
+    @media only screen and (max-height: 850px) {
+      height: 110px;
+    }
   }
 
   .greet_email-form input:focus,
@@ -498,6 +507,8 @@ const GreetVideo = ({
                   }}
                   className="greet_btn"
                   href={`${greetOption.link}`}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {greetOption.laval}
                 </a>

@@ -254,6 +254,7 @@ const GreetVideo = ({
   hi,
   border,
   isLeft,
+  locale,
   btnColorBg,
   btnColorText,
   defaultVideo,
@@ -449,7 +450,7 @@ const GreetVideo = ({
     <GreetWrapper
       id="greet_wrapper"
       className={`greet_wrapper greet_toggler ${
-        isLeft === "yes" ? "greet_left" : ""
+        locale === "ar" ? "greet_left" : ""
       }`}
     >
       <video

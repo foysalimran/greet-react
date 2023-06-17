@@ -41,7 +41,7 @@ function App() {
               <Routes>
                 <Route
                   path="/"
-                  element={<MarketingSolution header={headerMarketing} />}
+                  element={<MarketingSolution header={headerMarketing} locale={locale} />}
                 />
               </Routes>
             </BrowserRouter>

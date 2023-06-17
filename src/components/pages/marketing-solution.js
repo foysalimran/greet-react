@@ -17,7 +17,7 @@ const greetOptions = [
   { id: 3, link: "#", laval: "Send Email", type: "email_form" },
 ];
 
-const MarketingSolution = ({ header }) => {
+const MarketingSolution = ({ header, locale }) => {
   return (
     <div>
       <HeaderMarketing header={header} />
@@ -33,6 +33,7 @@ const MarketingSolution = ({ header }) => {
         hi="hi! 👋"
         border="#7432ff"
         isLeft="no"
+        locale={locale}
         btnColorBg="#7432ff"
         btnColorText="#fff"
         defaultVideo={defaultVideo}

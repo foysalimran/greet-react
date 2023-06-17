@@ -260,7 +260,6 @@ const GreetVideo = ({
   defaultVideo,
   web3formsAccessKey,
 }) => {
-  let greetFormClose;
   const [currentVideo, setCurrentVideo] = useState(defaultVideo);
   const [success, setSuccess] = useState("Send Email");
 
@@ -317,6 +316,7 @@ const GreetVideo = ({
     let greetText = document.getElementById("greet_text");
     let greetAddFrom = document.querySelector(".greet_add-form");
     let emailForm = document.querySelector(".greet_email-form");
+    let greetFormClose = document.querySelector(".greet_form-close");
 
     greetVideo.autoplay = true;
     greetVideo.muted = true;
@@ -423,12 +423,12 @@ const GreetVideo = ({
         greetVideo.pause();
       });
     }
-    greetFormClose = () => {
+    greetFormClose.addEventListener("click", () => {
       emailForm.classList.remove("email-form-active");
       greetVideo.play();
       greetFullPlay.style.display = "none";
       greetFullPause.style.display = "flex";
-    }
+    });
     // ON SCROLL SIZE CHANGE
     window.addEventListener("scroll", function (event) {
       let scroll = window.scrollY;
@@ -439,12 +439,6 @@ const GreetVideo = ({
       }
     });
   }, []);
-
-  const handleButtonClick = () => {
-    if (greetFormClose) {
-      greetFormClose(); // Call the function
-    }
-  };
 
   return (
     <GreetWrapper
@@ -542,7 +536,7 @@ const GreetVideo = ({
         method="POST"
         onSubmit={emailFormSubmit}
       >
-        <div className="greet_form-close" onClick={handleButtonClick}>
+        <div className="greet_form-close">
           <AiOutlineCloseCircle />
         </div>
         <input type="text" name="name" required placeholder="Your name*" />

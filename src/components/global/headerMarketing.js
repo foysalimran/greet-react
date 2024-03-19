@@ -171,7 +171,7 @@ const HeaderMarketing = ({ header }) => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="/react-project/greet-react/contact-us">
+                  <a href="/contact-us">
                     Contact
                   </a>
                 </li>

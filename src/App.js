@@ -46,7 +46,7 @@ function App() {
               <ScrollToTop />
               <Routes>
                 <Route
-                  path="/react-project/greet-react"
+                  path="/"
                   element={
                     <MarketingSolution
                       header={headerMarketing}
